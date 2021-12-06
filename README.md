@@ -1,3 +1,3 @@
 # JavaFX_Valutakalkulator
-JavaFX øving valuta kalkulator
+JavaFX øving valuta kalkulator.
 Regne ut fra NOK til utenlandsk valuta

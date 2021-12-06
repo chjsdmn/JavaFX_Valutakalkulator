@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxvalutakalkulator.HelloController">
+   <children>
+      <Label layoutX="169.0" layoutY="51.0" prefHeight="27.0" prefWidth="163.0" text="Valutakalkulator">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="395.0" layoutY="187.0" mnemonicParsing="false" onAction="#btnBeregn" text="Beregn" />
+      <Label layoutX="169.0" layoutY="100.0" text="Beløp" />
+      <Label layoutX="169.0" layoutY="150.0" text="Valuta" />
+      <Label fx:id="lalRes" layoutX="169.0" layoutY="281.0" prefHeight="83.0" prefWidth="273.0" />
+      <TextField fx:id="txtBeløp" layoutX="225.0" layoutY="96.0" />
+      <RadioButton layoutX="228.0" layoutY="150.0" mnemonicParsing="false" text="USD">
+         <toggleGroup>
+            <ToggleGroup fx:id="cur" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="287.0" layoutY="150.0" mnemonicParsing="false" text="CNY" toggleGroup="$cur" />
+      <RadioButton layoutX="345.0" layoutY="150.0" mnemonicParsing="false" text="EUR" toggleGroup="$cur" />
+      <RadioButton layoutX="402.0" layoutY="150.0" mnemonicParsing="false" text="JPY" toggleGroup="$cur" />
+   </children>
+</AnchorPane>
